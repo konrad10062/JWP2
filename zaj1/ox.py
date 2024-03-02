@@ -69,6 +69,7 @@ class Board:
                 (b['3'] == b['5'] == b['7'] == p) or # przekątna 1
                 (b['1'] == b['5'] == b['9'] == p)) # przekątna 2
     def isBoardFull(self):
+
         """Zwraca True, jeśli wszystkie pola na planszy są zajęte."""
         for space in ALL_SPACES:
             if self.board[space] == self.BLANK:
